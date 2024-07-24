@@ -10,5 +10,6 @@
     <color name="fondo">#265087</color>
     <color name="boton">#e3b142</color>
     <color name="plomo">#88958A</color>
+    <color name="negro">#000000</color>
 
 </resources>
