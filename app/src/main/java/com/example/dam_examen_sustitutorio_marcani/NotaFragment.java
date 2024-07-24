@@ -70,10 +70,15 @@ public class NotaFragment extends Fragment {
                 recyclerView.setLayoutManager(new StaggeredGridLayoutManager( numeroColumnas, StaggeredGridLayoutManager.VERTICAL));
             }
             notaList = new ArrayList<>();
-            notaList.add(new Nota("EJEMPLO 1","EJEMPLO 1", true, android.R.color.holo_blue_light));
-            notaList.add(new Nota("EJEMPLO 2", "EJEMPLO 2",false, android.R.color.holo_green_light));
-            notaList.add(new Nota("EJEMPLO 3","EJEMPLO 3", true, android.R.color.holo_orange_light));
-            notaList.add(new Nota("EJEMPLO 4","EJEMPLO 4", true, android.R.color.holo_orange_light));
+            notaList.add(new Nota("La Fuerza Armada de Venezuela, ¿garante de la elección presidencial?","La Fuerza Armada de Venezuela ha sido pilar del chavismo desde que llegó al poder hace 25 años, pero la oposición aspira a que pueda ser garante de las elecciones del domingo, ¿será un actor determinante?", true, android.R.color.holo_blue_light));
+            notaList.add(new Nota("Un avión con 19 ocupantes se estrelló en Nepal y el piloto es el único sobreviviente", "Dieciocho personas murieron el miércoles en Katmandú cuando el avión en el que viajaban se estrelló durante el despegue, un accidente en el que sólo sobrevivió el piloto, indicó la policía de la capital nepalí.",false, android.R.color.holo_green_light));
+            notaList.add(new Nota("Globos norcoreanos con basura cayeron en el complejo presidencial surcoreano","Corea del Norte volvió a enviar globos cargados con basura al Sur, en respuesta a la propaganda emitida por Seúl contra el régimen de Kim Jong-un.", true, android.R.color.holo_orange_light));
+            notaList.add(new Nota("Debut en Juegos Olímpicos: Argentina empató 2-2 a Marruecos en final con polémica","Conoce cómo seguir la transmisión del debut de Argentina Sub 23 vs Marruecos en vivo por el grupo B de los Juegos Olímpicos París 2024.", true, android.R.color.holo_orange_light));
+            notaList.add(new Nota("Nacho se despide entre lágrimas de Real Madrid y provoca la emoción de Florentino Pérez [VIDEO]","\"Este club lo es todo para mí\", señaló Nacho que jugará en Al Qadsiah después de casi 24 años en Real Madrid.", true, android.R.color.holo_orange_light));
+            notaList.add(new Nota("Fossati sobre Christian Cueva: Lejos de arrepentirnos de ayudarlo, estamos agradecidos de intentarlo","Nuestra parte está hecha, señaló Jorge Fossati respecto a Christian Cueva que jugó la Copa América a pesar de su falta de continuidad.", true, android.R.color.holo_orange_light));
+            notaList.add(new Nota("¿Qué son las arritmias cardíacas y cómo reducir el riesgo de que aparezcan?","La arritmia es un trastorno del corazón que afecta el ritmo del mismo, que empieza a latir muy rápido o muy despacio, explica el doctor Elmer Huerta, consultor médico de RPP. Conoce más detalles en esta nota.", true, android.R.color.holo_orange_light));
+            notaList.add(new Nota("Compromiso y respeto: conoce cómo cuidar la salud mental de los adultos mayores","¿Cómo garantizar el bienestar mental de los adultos mayores? Carla Marcos, psicóloga clínica y psicoterapeuta, ofrece valiosos consejos sobre el manejo de situaciones cruciales para su cuidado.", true, android.R.color.holo_orange_light));
+            notaList.add(new Nota("¡Enfrenta el frío con calor! Estas son las 3 infusiones recomendadas para combatir el intenso frío","Jonathan Yupanqui, nutricionista de EsSalud, recomendó tres bebidas calientes ideales para aliviar síntomas inflamatorios, dolores de cabeza y posibles resfriados.", true, android.R.color.holo_orange_light));
 
             adapterNotas = new MyNotaRecyclerViewAdapter(notaList,mListener);
             recyclerView.setAdapter(adapterNotas);
